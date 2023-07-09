@@ -9,7 +9,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: montserrat;
+    font-family: oswald;
 }
 
 html, body{
@@ -142,6 +142,113 @@ button {
 
 
 #page2{
-    height: 100vh;
-    width: 100vw;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#immortalXi{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+#immortalXi h3{
+    font-size: 44px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+#immortalXi p{
+    font-size: 17px;
+    line-height: 26px;
+    margin-bottom: 40px;
+}
+
+#gallery1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: flex-start;
+    max-width: 800px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.frame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    flex-basis: calc((100% - 40px) / 3);
+    margin-bottom: 20px;
+}
+
+
+.card {
+    position: relative;
+    width: 190px;
+    height: 254px;
+    background: rgba(255, 0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(315deg,#265B15,#560C06);
+    border-radius: 3%;
+  }
+  
+  .card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(315deg,#265B15,#560C06);
+    filter: blur(30px);
+    border-radius: 3%;
+  }
+
+  .card img {
+    position: absolute;
+    z-index: 3;
+    height: 96%;
+    width: 95%;
+    max-width: 95%;
+    border-radius: 3%;
+  }
+  
+  .card .content {
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: scale(0);
+    transition: 0.5s;
+  }
+
+.headline h4{
+    font-size: 25px;
+    text-align: center;
+    margin: 10px 0px;
+    color: aliceblue;
+    font-weight: 100;
 }
